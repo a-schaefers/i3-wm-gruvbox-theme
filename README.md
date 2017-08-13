@@ -1,7 +1,7 @@
 Here be almost every file for my personal i3-wm gruvbox theme implementation using the
 colors of the great gruvbox color scheme. Good luck!  https://github.com/morhetz/gruvbox
 
-
+![alt text](https://github.com/a-schaefers/i3-wm-gruvbox-theme/raw/master/screenshots/gruv-sadkitty-clean.png)
 
 I launch most of my startup programs using .xinitrc. The screens.sh script I run
 I use whenever i attach/detach
