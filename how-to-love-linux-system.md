@@ -11,11 +11,8 @@ If you think you're going to be happier with a pre-customized version of linux l
 At a minimal, you need to understand the differences between:
 
 Xorg Display Server https://wiki.archlinux.org/index.php/xorg
-
 Display managers https://wiki.archlinux.org/index.php/display_manager
-
 Window managers https://wiki.archlinux.org/index.php/window_manager
-
 Desktop Environments https://wiki.archlinux.org/index.php/desktop_environment
 
 Most of the ricers here [reddit / unixporn]  pick a window manager that is lightweight and easily customizeable, such as i3 or openbox, and there are dozens of others. Batteries are not included with these, so you will need to install a lot of programs and edit a lot of config files to get everything working together nicely. A customizeable terminal like rxvt-unicode, a program launcher like Dmenu or Rofi, and a bar like Polybar or an OSX-like launcher called Plank... At this point you probably want transparency and smooth-scrolling without vertical screen-tearing issues, so take a look at: Compositors. https://wiki.archlinux.org/index.php/Xorg#Composite Most here use a program called Compton for this. And now you just got your willy wet.
