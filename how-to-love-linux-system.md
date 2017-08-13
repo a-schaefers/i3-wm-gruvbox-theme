@@ -9,12 +9,16 @@ One thing in a linux system you need to get used to seeing: Error Messages. Lear
 If you think you're going to be happier with a pre-customized version of linux like ubuntu or elementary out of the box as compared to something like OSX, not going to happen. For this reason I recommend Arch and the wiki to be used as a base for a fully customized linux box just for you. Though there are many other minimal distros that are easily customizable, like Gentoo-- and any distro's particular desktop environment can be hacked to look like another, I find Arch to be the sweet spot personally. One other thing to consider are the BSD operating systems, but they are generally not as well suited for the desktop as they are for servers.
 
 At a minimal, you need to understand the differences between:
+
 Xorg Display Server https://wiki.archlinux.org/index.php/xorg
+
 Display managers https://wiki.archlinux.org/index.php/display_manager
+
 Window managers https://wiki.archlinux.org/index.php/window_manager
+
 Desktop Environments https://wiki.archlinux.org/index.php/desktop_environment
 
-Most of the ricers here [on reddit / unixporn]  pick a window manager that is lightweight and easily customizeable, such as i3 or openbox, and there are dozens of others. Batteries are not included with these, so you will need to install a lot of programs and edit a lot of config files to get everything working together nicely. A customizeable terminal like rxvt-unicode, a program launcher like Dmenu or Rofi, and a bar like Polybar or an OSX-like launcher called Plank... At this point you probably want transparency and smooth-scrolling without vertical screen-tearing issues, so take a look at: Compositors. https://wiki.archlinux.org/index.php/Xorg#Composite Most here use a program called Compton for this. And now you just got your willy wet.
+Most of the ricers here [reddit / unixporn]  pick a window manager that is lightweight and easily customizeable, such as i3 or openbox, and there are dozens of others. Batteries are not included with these, so you will need to install a lot of programs and edit a lot of config files to get everything working together nicely. A customizeable terminal like rxvt-unicode, a program launcher like Dmenu or Rofi, and a bar like Polybar or an OSX-like launcher called Plank... At this point you probably want transparency and smooth-scrolling without vertical screen-tearing issues, so take a look at: Compositors. https://wiki.archlinux.org/index.php/Xorg#Composite Most here use a program called Compton for this. And now you just got your willy wet.
 
 Regardless of which Linux distro you end up settling with-- and many of us never do fully settle-- the Arch wiki is some of the best documentation out there when it comes to tweaking your desktop-- often straight and to the point-- and so it will show you how to do whatever you want to do, and along the way you will attain a lot of knowledge. Only be warned, this is not the easy path, and there be dragons.   
 
