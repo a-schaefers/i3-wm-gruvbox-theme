@@ -3,12 +3,6 @@ colors of the great gruvbox color scheme. Good luck!  https://github.com/morhetz
 
 ![alt text](https://github.com/a-schaefers/i3-wm-gruvbox-theme/raw/master/screenshots/gruv-sadkitty-clean.png)
 
-I launch most of my startup programs using .xinitrc. The screens.sh script I run
-I use whenever i attach/detach
-from my external monitor. I bind it to a hotkey because I have it set to
-restart compton and conky, good for debugging/trying out new configs...
-Everything else should be plain to see.
-
 I did it in this order:
 
 1. Install Vim gruvbox theme using vim-plug plugin manager.
@@ -16,14 +10,14 @@ Enable vim gruvbox theme in vimrc. Source the gruvbox color sh script in
 .bashrc or .zshrc since I use URxvt (see my "note-about-terminals"). Lastly, I
 installed lightline which will use the vim gruvbox theme also if you have it
 enabled in your vimrc. I also have font-awesome powerline-fonts installed along with Hack
-and Fantasque Sans Mono.
+and Fantasque Sans Mono. I use Fantasque Sans Mono for the terminal and Hack
+for almost everything else.
 
 2. Apply gruvbox 256 color scheme to .Xresources file. Will need to restart X
    server or refresh with Xrdb for this to take immediate effect on new
    terminals.
 
-3. Apply i3 config colors. To all the windows and workspace corner. The two
-   sections are at the end of my config file.
+3. Apply i3 config colors. The colors and are located at the end of my config file.
 
 4. Install i3blocks. These blocks will not all work the same out of the
    box for everyone. At the least you'll probably need to set your network
@@ -42,18 +36,26 @@ and Fantasque Sans Mono.
 
 7. The gtk theme I simply created one to my preferences using oomox. https://github.com/actionless/oomox
 I included pictures of my settings and there is also a config file in this
-repo. If you make a better one, please share!
+repo. If you make a better one, please share! I apply the theme using the
+'lxappearance' program. You can also use the program to set gtk fonts here. I
+use 'hack'.
 
 8. The last and hardest part is conky. I have decided I do not like conky
-   after making this config. I do not guarantee it will look right for you,
+   after making hacking on this default config. It is the most ugly code I've seen since 1995. I do not guarantee it will look right for you,
    but it displays fine on my 1366x768 laptop screen. conkyrc is the
    clock/date. conkyrc2 is the process list / HD and will need some tweaking
    if you do not use 3 partitions, one each for boot home and root. 
 
-
 note: the kitty and gas mask wallpaper were not mine originally and were modified by myself to use a
 gradient of the gruvbox colorschem blue and dark gray colors. The other
-spaceman.jpg is floating around the internet everywhere and I am keeping it
-here also for any who might want it.
+spaceman.jpg is also not mine and is floating around the internet everywhere and I am keeping it
+here also for any who might want it. I got it from here: http://wallpapercave.com/wp/vp75NPD.jpg
 
 Happy grooving.
+
+
+![alt text](https://github.com/a-schaefers/i3-wm-gruvbox-theme/blob/master/screenshots/gruv-prepper-clean.png)
+
+
+![alt text](https://github.com/a-schaefers/i3-wm-gruvbox-theme/blob/master/screenshots/gruv-dirty.png)
+

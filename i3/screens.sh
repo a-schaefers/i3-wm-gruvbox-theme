@@ -1,5 +1,10 @@
 #!/bin/bash
-# set laptop primary
+
+#I use this whenever i attach/detach
+#from my external monitor. I actually prefer it over programs like autorandr. I bind it to a hotkey because I have it set to
+#restart compton and conky, good for debugging/trying out new configs...
+
+# set laptop as primary monitor
 xrandr --output LVDS-1 --primary
 # look for my external screen
 xrandr --output VGA-1 --auto --left-of LVDS-1
