@@ -25,11 +25,14 @@ and Fantasque Sans Mono.
 3. Apply i3 config colors. To all the windows and workspace corner. The two
    sections are at the end of my config file.
 
-4. Apply i3blocks colors. These blocks will not all work the same out of the
+4. Install i3blocks. These blocks will not all work the same out of the
    box for everyone. At the least you'll probably need to set your network
    interface for ethernet and wifi will probably be different than mine. (my
    ethernet is 'eno1' and wifi is 'wlp2s0'. Find yours by typing 'ifconfig' or
-   'ip link'
+   'ip link'. Also the path to the i3blocks scripts at the top of the i3blocks.conf file is set using
+   my name /home/adam so obviously that needs to be changed. The i3blocks
+   scripts also like to use their own colors overriding yourown. (particularly
+   wifi and battery.) So I fixed that in mine.
 
 5. I am using prezto's zsh config, it's more lightweight than others that are
    out there and by default uses the same colors as gruvbox! Win win.
