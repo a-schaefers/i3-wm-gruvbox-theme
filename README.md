@@ -33,18 +33,13 @@ for almost everything else.
 I included pictures of my settings and there is also a config file in this
 repo. 
 
-8. The hardest part is conky. https://github.com/brndnmtthws/conky I have decided I do not like conky
+8. Conky. https://github.com/brndnmtthws/conky I have decided I do not like conky
    after hacking on this default config for more time than I'd like to admit. It is the most ugly code I've seen since 1995. I do not guarantee it will look right for you,
    but it displays fine on my 1366x768 laptop screen. conkyrc is the
    clock/date. conkyrc2 is the process list / disk space and will need some tweaking
-   if you do not use 3 partitions, one each for boot home and root. 
+   if you do not use 3 partitions, one each for boot home and root.
 
-9. The kitty and gas mask wallpaper were not mine originally and were modified by myself to use a
-gradient of the gruvbox colorschem blue and dark gray colors. I use nitrogen to set the wallpapers. https://github.com/l3ib/nitrogen Here are the original links where I found the wallpapers:
-https://s-media-cache-ak0.pinimg.com/originals/53/68/63/53686322c8ff8602bbe6ffa0aeb46ceb.jpg 
-https://s-media-cache-ak0.pinimg.com/originals/4d/89/87/4d89876c9e131e12be1a393910916ff4.jpg
-The other spaceman.jpg is also not mine and is floating around the internet everywhere and I am keeping it
-here also for any who might want it. I got it from here: http://wallpapercave.com/wp/vp75NPD.jpg
+9. Dunst notification theme is nothing fancy but I included it anyways.
 
 Happy grooving.
 
