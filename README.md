@@ -29,12 +29,10 @@ for almost everything else.
    wifi and battery.) So I fixed that in mine.
 
 4.5 Why i3blocks? I would use i3status if I could, but I found i3blocks was
-more simple to configure and allowed font-awesome to work very easily. Other
-bars like polybar have more functionality, but with tiling window managers a bar is
-almost unecessary because of hotkeys. I just use mine as a system status
-monitor and prefer to be minimal. Sometimes I disable the bar entirely. I use wifi-menu to connect to wifi
-and try do as much as I can with gnu tools in the terminal. I despise programs
-that put icons on my tray.
+easy to configure and allowed use of font-awesome without hassle. IMO a
+full-functioned, traditional status bar goes against the philosophy of hotkeys
+and tiled window managers. I use mine as a system status
+monitor and prefer to be minimal. Sometimes I disable the bar entirely. 
 
 5. I am using prezto's https://github.com/sorin-ionescu/prezto zsh config, it's more lightweight than others that are
    out there and by default uses the same colors as gruvbox.
@@ -42,7 +40,7 @@ that put icons on my tray.
 6. Rofi https://github.com/DaveDavenport/rofi comes with gruvbox theme included all that is necessary is to turn it
    on.
 
-7. The gtk theme I created one to my preferences using oomox. https://github.com/actionless/oomox
+7. I created a GTK theme to my preferences using oomox. https://github.com/actionless/oomox
 I included pictures of my settings and there is also a config file in this
 repo. If you make a better one, please share! I apply the theme using the
 'lxappearance' program but there are many ways to apply a theme. You can also use the program to set gtk fonts here. I
