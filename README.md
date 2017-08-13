@@ -7,7 +7,7 @@ I did it like this:
 
 1. Install Vim gruvbox theme. I use the 'vim-plug' plugin manager.
 Enable vim gruvbox theme in vimrc. Source the gruvbox color sh script in
-.bashrc or .zshrc since I use URxvt (see my "note-about-terminals"). Lastly, I
+.bashrc or .zshrc since I use URxvt (see my "note-about-terminals"). I
 installed lightline which will also use the vim gruvbox theme also if you have it
 enabled in your vimrc. I also have font-awesome powerline-fonts installed along with Hack
 and Fantasque Sans Mono. I use Fantasque Sans Mono for the terminal and Hack
@@ -46,7 +46,7 @@ repo. If you make a better one, please share! I apply the theme using the
 'lxappearance' program but there are many ways to apply a theme. You can also use the program to set gtk fonts here. I
 use 'hack'.
 
-8. The last and hardest part is conky. https://github.com/brndnmtthws/conky I have decided I do not like conky
+8. The hardest part is conky. https://github.com/brndnmtthws/conky I have decided I do not like conky
    after hacking on this default config for more time than I'd like to admit. It is the most ugly code I've seen since 1995. I do not guarantee it will look right for you,
    but it displays fine on my 1366x768 laptop screen. conkyrc is the
    clock/date. conkyrc2 is the process list / disk space and will need some tweaking
