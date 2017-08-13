@@ -41,4 +41,10 @@ and Fantasque Sans Mono.
 I included pictures of my settings and there is also a config file in this
 repo. If you make a better one, please share!
 
+8. The last and hardest part is conky. I have decided I do not like conky
+   after making this config. I do not guarantee it will look right for you,
+   but it displays fine on my 1366x768 laptop screen. conkyrc is the
+   clock/date. conkyrc2 is the process list / HD and will need some tweaking
+   if you do not use 3 partitions, one each for boot home and root. 
+
 Happy grooving.
