@@ -53,8 +53,10 @@ use 'hack'.
    if you do not use 3 partitions, one each for boot home and root. 
 
 note: the kitty and gas mask wallpaper were not mine originally and were modified by myself to use a
-gradient of the gruvbox colorschem blue and dark gray colors. The other
-spaceman.jpg is also not mine and is floating around the internet everywhere and I am keeping it
+gradient of the gruvbox colorschem blue and dark gray colors. Here are the original links where I found them:
+https://s-media-cache-ak0.pinimg.com/originals/53/68/63/53686322c8ff8602bbe6ffa0aeb46ceb.jpg 
+https://s-media-cache-ak0.pinimg.com/originals/4d/89/87/4d89876c9e131e12be1a393910916ff4.jpg
+The other spaceman.jpg is also not mine and is floating around the internet everywhere and I am keeping it
 here also for any who might want it. I got it from here: http://wallpapercave.com/wp/vp75NPD.jpg
 
 Happy grooving.
