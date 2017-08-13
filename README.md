@@ -15,7 +15,7 @@ I did it in this order:
 Enable vim gruvbox theme in vimrc. Source the gruvbox color sh script in
 .bashrc or .zshrc since I use URxvt (see my "note-about-terminals"). Lastly, I
 installed lightline which will use the vim gruvbox theme also if you have it
-enabled in your vimrc. I also have powerline fonts installed along with Hack
+enabled in your vimrc. I also have font-awesome powerline-fonts installed along with Hack
 and Fantasque Sans Mono.
 
 2. Apply gruvbox 256 color scheme to .Xresources file. Will need to restart X
