@@ -37,4 +37,8 @@ and Fantasque Sans Mono.
 6. Rofi comes with gruvbox theme included all that is necessary is to turn it
    on.
 
+7. The gtk theme I simply created one to my preferences using oomox. https://github.com/actionless/oomox
+I included pictures of my settings and there is also a config file in this
+repo. If you make a better one, please share!
+
 Happy grooving.
