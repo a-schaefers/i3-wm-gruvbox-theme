@@ -3,9 +3,9 @@ colors of the great gruvbox color scheme. Good luck!  https://github.com/morhetz
 
 
 
-I launch most of my startup programs using .xinitrc except for a script I run
-on i3-startup called screens.sh. I run that script whenever i attach/detach
-from my external monitor. I also bind it to a hotkey because I have it set to
+I launch most of my startup programs using .xinitrc. The screens.sh script I run
+I use whenever i attach/detach
+from my external monitor. I bind it to a hotkey because I have it set to
 restart compton and conky, good for debugging/trying out new configs...
 Everything else should be plain to see.
 
