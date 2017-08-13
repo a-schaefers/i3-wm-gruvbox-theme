@@ -47,4 +47,10 @@ repo. If you make a better one, please share!
    clock/date. conkyrc2 is the process list / HD and will need some tweaking
    if you do not use 3 partitions, one each for boot home and root. 
 
+
+note: the kitty and gas mask wallpaper were not mine originally and were modified by myself to use a
+gradient of the gruvbox colorschem blue and dark gray colors. The other
+spaceman.jpg is floating around the internet everywhere and I am keeping it
+here also for any who might want it.
+
 Happy grooving.
