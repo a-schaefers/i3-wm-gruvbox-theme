@@ -5,15 +5,14 @@ colors of the great gruvbox https://github.com/morhetz/gruvbox color scheme.
 
 I did it like this:
 
-1. Install Vim gruvbox theme. I use the 'vim-plug' plugin manager.
-Enable vim gruvbox theme in vimrc. Source the gruvbox color sh script in
+1. Install Vim gruvbox theme. I use the 'vim-plug' plugin manager and enable vim gruvbox theme along with 256 colors in vimrc. Source the gruvbox color sh script in
 .bashrc or .zshrc since I use URxvt (see my "note-about-terminals"). I
-installed lightline which will also use the vim gruvbox theme also if you have it
-enabled in your vimrc. I also have font-awesome powerline-fonts installed along with Hack
-and Fantasque Sans Mono. I use Fantasque Sans Mono for the terminal and Hack
+installed lightline which will use the vim gruvbox theme if you set it in the
+lightline vim settings. I also have font-awesome powerline-fonts installed along with Hack
+and Fantasque Sans Mono fonts. I use Fantasque Sans Mono for the terminal and Hack
 for almost everything else.
 
-2. Apply gruvbox 256 color scheme to .Xresources file. You will need to restart X
+2. Apply gruvbox color scheme to .Xresources file. You will need to restart X
    server or refresh with Xrdb for this to take immediate effect on new
    terminals.
 
@@ -22,29 +21,17 @@ for almost everything else.
 4. Install i3blocks. https://github.com/vivien/i3blocks These blocks will not all work the same out of the
    box for everyone. At the least you'll probably need to set your network
    interface for ethernet and wifi will probably be different than mine. (my
-   ethernet is 'eno1' and wifi is 'wlp2s0'. Find yours by typing 'ifconfig' or
-   'ip link' in the terminal. Also the path to the i3blocks scripts at the top of the i3blocks.conf file is set using
-   my name /home/adam so obviously that needs to be changed. The i3blocks
-   scripts also like to use their own colors overriding yourown. (particularly
-   wifi and battery.) So I fixed that in mine.
-
-4.5 Why i3blocks? I would use i3status if I could, but I found i3blocks was
-easy to configure and allowed use of font-awesome without hassle. IMO a
-full-functioned, traditional status bar goes against the philosophy of hotkeys
-and tiled window managers. I use mine as a system status
-monitor and prefer to be minimal. Sometimes I disable the bar entirely. 
+   ethernet is 'eno1' and wifi is 'wlp2s0'. Also the path to the i3blocks scripts at the top of the i3blocks.conf file is set using my name /home/adam so that needs to be changed.
 
 5. I am using prezto's https://github.com/sorin-ionescu/prezto zsh config, it's more lightweight than others that are
-   out there and by default uses the same colors as gruvbox.
+   out there and by default looks great with gruvbox.
 
 6. Rofi https://github.com/DaveDavenport/rofi comes with gruvbox theme included all that is necessary is to turn it
    on.
 
 7. I created a GTK theme to my preferences using oomox. https://github.com/actionless/oomox
 I included pictures of my settings and there is also a config file in this
-repo. If you make a better one, please share! I apply the theme using the
-'lxappearance' program but there are many ways to apply a theme. You can also use the program to set gtk fonts here. I
-use 'hack'.
+repo. 
 
 8. The hardest part is conky. https://github.com/brndnmtthws/conky I have decided I do not like conky
    after hacking on this default config for more time than I'd like to admit. It is the most ugly code I've seen since 1995. I do not guarantee it will look right for you,
