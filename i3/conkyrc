@@ -1,0 +1,50 @@
+use_xft yes
+xftfont 123:size=8
+xftalpha 0.1
+update_interval 5
+total_run_times 0
+
+own_window_class Conky
+own_window_type override
+own_window yes
+
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_colour 000000
+own_window_argb_visual no
+own_window_argb_value 0
+
+double_buffer yes
+#minimum_size 250 5
+#maximum_width 500
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+default_color white
+default_shade_color red
+default_outline_color green
+alignment top_left
+gap_x 850
+gap_y 0
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+net_avg_samples 1
+override_utf8_locale yes
+use_spacer yes
+
+
+minimum_size 0 0
+TEXT
+${voffset 10}${color EBDBB2}${font GE Inspira:pixelsize=120}${time %I:%M}${font}${voffset -84}${offset 10}${color 98971A}${font GE Inspira:pixelsize=40}${time %d} ${voffset -15}${color D79921}${font GE Inspira:pixelsize=22}${time  %B} ${time %Y}${color CC241D}${font}${voffset 24}${font GE Inspira:pixelsize=45}${offset -148}${time %A}${font}
+
+
+
+#conkysucks
+#white ${color EDBBB2}
+# green ${color 98971A}
+# yllw ${color D79921}
+# red ${color CC241D}
+# purple ${color B16286}
+

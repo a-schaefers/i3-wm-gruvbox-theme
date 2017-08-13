@@ -1,0 +1,160 @@
+#minimal i3 configurations
+
+# Set mod keys (Mod1=<Alt>, Mod4=<Super>)
+set $mod Mod1
+
+
+# terminal
+bindsym $mod+Return exec --no-startup-id urxvtc 
+# dmenu
+#bindsym $mod+Up exec --no-startup-id dmenu_run
+bindsym $mod+Up exec --no-startup-id rofi -show run
+# kill container
+bindsym $mod+Down kill
+
+# stop compton 
+bindsym $mod+c exec pkill compton
+# start compton
+bindsym $mod+Shift+c exec --no-startup-id compton --config ~/.config/i3/compton.conf &
+# restart i3 inplace 
+bindsym $mod+r restart
+# exit i3
+bindsym $mod+Control+Escape exec i3-msg exit
+# kill xorg server
+bindsym $mod+Shift+Escape exec pkill -15 Xorg
+
+# screenshot printscreen to ~/home
+bindsym Print exec --no-startup-id scrot
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen
+
+# vim key navigations, uncomment the other sections for arrow keys
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# move focused window
+bindsym $mod+Control+h move left
+bindsym $mod+Control+j move down
+bindsym $mod+Control+k move up
+bindsym $mod+Control+l move right
+
+# executed on startup and i3 restarts
+# exec_always --no-startup-id ~/.config/i3/screens.sh
+bindsym $mod+s exec --no-startup-id ~/.config/i3/screens.sh
+
+# new window split direction toggle
+bindsym $mod+t split toggle
+
+# scratchpad
+bindsym grave scratchpad show
+bindsym $mod+grave move scratchpad
+
+floating_modifier $mod
+bindsym $mod+space floating toggle
+
+# workspaces
+# to display names or symbols instead of plain workspace numbers you can use
+# something like: set $ws1 1:mail
+#                 set $ws2 2:
+
+set $ws1 "01 "
+set $ws2 "02 "
+set $ws3 "03 "
+set $ws4 "04 "
+set $ws5 "05 "
+set $ws6 "06 "
+set $ws7 "07 "
+set $ws8 "08 "
+set $ws9 "09 "
+set $wsX "10 "
+
+# switch to workspace
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $wsX
+
+# move focused container to workspace
+bindsym $mod+Control+1 move container to workspace $ws1
+bindsym $mod+Control+2 move container to workspace $ws2
+bindsym $mod+Control+3 move container to workspace $ws3
+bindsym $mod+Control+4 move container to workspace $ws4
+bindsym $mod+Control+5 move container to workspace $ws5
+bindsym $mod+Control+6 move container to workspace $ws6
+bindsym $mod+Control+7 move container to workspace $ws7
+bindsym $mod+Control+8 move container to workspace $ws8
+bindsym $mod+Control+9 move container to workspace $ws9
+bindsym $mod+Control+0 move container to workspace $wsX
+
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # mute sound
+
+# install acpilight for this drop in xbacklight replacement
+# Sreen brightness controls
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20
+
+
+
+#THEME
+
+#gruvbox colorscheme
+set $bg #282828
+set $red #cc241d
+set $green #98971a
+set $lightgreen #b8bb26
+set $yellow #d79921
+set $blue #458588
+set $purple #b16286
+set $aqua #689d68
+set $gray #a89984
+set $darkgray #1d2021
+
+#font pango:Fantasque Sans Mono 10
+font pango:Hack 8
+
+#bar section
+bar {
+    position bottom
+    status_command i3blocks -c /home/adam/.config/i3/i3blocks.conf
+    colors {
+            background $bg
+            statusline $yellow
+            
+            #                    border  backgr. text
+            focused_workspace    $aqua $aqua $darkgray
+            inactive_workspace   $darkgray $darkgray $yellow
+            active_workspace     $darkgray $darkgray $yellow
+            urgent_workspace     $red $red $bg
+        }
+}
+
+# window section
+
+# green gruvbox
+# class                 border|backgr|text|indicator|child_border
+#client.focused          $green $green $darkgray $purple $darkgray
+#client.focused_inactive $bg $darkgray $yellow $purple $darkgray
+#client.unfocused        $bg $darkgray $yellow $purple $darkgray
+#client.urgent           $red $red $white $red $red
+
+
+# blue gruvbox
+# class                 border|backgr|text|indicator|child_border
+client.focused          $blue $blue $darkgray $purple $darkgray
+client.focused_inactive $bg $darkgray $yellow $purple $darkgray
+client.unfocused        $bg $darkgray $yellow $purple $darkgray
+client.urgent           $red $red $white $red $red
+

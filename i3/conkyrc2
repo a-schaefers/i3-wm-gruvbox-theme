@@ -1,0 +1,62 @@
+use_xft yes
+xftfont 123:size=8
+xftalpha 0.1
+update_interval 5
+total_run_times 0
+
+own_window_class Conky
+own_window_type override
+own_window yes
+
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_colour 000000
+own_window_argb_visual no
+own_window_argb_value 0
+
+double_buffer yes
+#minimum_size 250 5
+#maximum_width 500
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+default_color white
+default_shade_color red
+default_outline_color green
+alignment top_left
+gap_x 850
+gap_y 0
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+net_avg_samples 1
+override_utf8_locale yes
+use_spacer yes
+
+
+
+minimum_size 0 0
+TEXT
+
+#conky sucks
+${voffset 105}
+${goto 12}${font Hack:pixelsize=12}${color D79921}CPU${offset 9}${color EDBBB2}${cpu cpu0}%${goto 112}${color D79921}RAM${offset 9}${color EDBBB2}$mem / $memmax${goto 301}${color D79921}HD${offset 9}${color EDBBB2}Avail / Total
+${font Hack:pixelsize=10}${goto 12}${color EDBBB2}01. ${color 98971A}${top name 1}${goto 120}${top cpu 1}% / ${top mem_res 1}${goto 301}${font Hack:pixelsize=10}${color EDBBB2}/${goto 340}${color 98971A}${fs_free /} ${goto 400}/ ${fs_size /}
+${goto 12}${color EDBBB2}02. ${color D79921}${top name 2}${goto 120}${top cpu 2}% / ${top mem_res 2}${goto 301}${font Hack:pixelsize=10}${color EDBBB2}/boot${goto 340}${color D79921}${fs_free /boot}${goto 400}/ ${fs_size /boot}
+${goto 12}${color EDBBB2}03. ${color CC241D}${top name 3}${goto 120}${top cpu 3}% / ${top mem_res 3}${goto 301}${font Hack:pixelsize=10}${color EDBBB2}/home${goto 340}${color CC241D}${fs_free /home}${goto 400}/ ${fs_size /home}
+${goto 12}${color EDBBB2}04. ${color 458588}${top name 4}${goto 120}${top cpu 4}% / ${top mem_res 4}
+${goto 12}${color EDBBB2}05. ${color B16286}${top name 5}${goto 120}${top cpu 5}% / ${top mem_res 5}
+
+
+
+
+
+# green ${color 98971A}
+# yllw ${color D79921}
+# red ${color CC241D}
+# purple ${color B16286}
+# blue ${color 458588} 
+#conky sucks a lot
+
+
