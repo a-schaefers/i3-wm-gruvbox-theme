@@ -12,11 +12,9 @@ lightline vim settings. I also have font-awesome powerline-fonts installed along
 and Fantasque Sans Mono fonts. I use Fantasque Sans Mono for the terminal and Hack
 for almost everything else.
 
-2. Apply gruvbox color scheme to .Xresources file. You will need to restart X
-   server or refresh with Xrdb for this to take immediate effect on new
-   terminals.
+2. Apply gruvbox color scheme to .Xresources file. 
 
-3. Apply i3 config colors. The colors and are located at the end of my i3/config file.
+3. Apply i3 config colors. The colors and are located at the end of my i3/config.
 
 4. Install i3blocks. https://github.com/vivien/i3blocks These blocks will not all work the same out of the
    box for everyone. At the least you'll probably need to set your network
@@ -29,12 +27,12 @@ for almost everything else.
 6. Rofi https://github.com/DaveDavenport/rofi comes with gruvbox theme included all that is necessary is to turn it
    on.
 
-7. I created a GTK theme to my preferences using oomox. https://github.com/actionless/oomox
+7. Apply a gruvbox gtk theme. I created a GTK theme to my preferences using oomox. https://github.com/actionless/oomox
 I included pictures of my settings and there is also a config file in this
-repo. 
+repo.
 
-8. Conky. https://github.com/brndnmtthws/conky I have decided I do not like conky
-   after hacking on this default config for more time than I'd like to admit. It is the most ugly code I've seen since 1995. I do not guarantee it will look right for you,
+8. Conky. https://github.com/brndnmtthws/conky 
+It is the most ugly code I've seen since 1995. I do not guarantee it will look right for you,
    but it displays fine on my 1366x768 laptop screen. conkyrc is the
    clock/date. conkyrc2 is the process list / disk space and will need some tweaking
    if you do not use 3 partitions, one each for boot home and root.
