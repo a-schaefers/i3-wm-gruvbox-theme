@@ -23,7 +23,7 @@ for almost everything else.
 4. Install i3blocks. https://github.com/vivien/i3blocks These blocks will not all work the same out of the
    box for everyone. At the least you'll probably need to set your network
    interface for ethernet and wifi will probably be different than mine. (my
-   ethernet is 'eno1' and wifi is 'wlp2s0'. Also the path to the i3blocks scripts at the top of the i3blocks.conf file is set using my name /home/adam so that needs to be changed.
+   ethernet is 'eno1' and wifi is 'wlp2s0'.) If you don't know what yours is, try typing 'ip link' or 'ifconfig' in the terminal and check the output. Also the path to the i3blocks scripts at the top of the i3blocks.conf file is set using my name /home/adam so that needs to be changed. If you have trouble with a particular block not displaying, try executing the script directly to see if you may be missing a package. (E.g. ./battery) Now if a 'command not found' error appears, then you need to find out what command was not found, and what package you may need to get that command. Google is your friend here.
 
 5. I am using prezto's https://github.com/sorin-ionescu/prezto zsh config, it's more lightweight than others that are
    out there and by default looks great with gruvbox.
