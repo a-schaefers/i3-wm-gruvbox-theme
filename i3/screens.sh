@@ -27,5 +27,5 @@ pkill conky
 
 # restart compton
 pkill compton
-    compton --config /home/adam/.config/i3/compton.conf &
+    compton --config ~/.config/i3/compton.conf &
 
