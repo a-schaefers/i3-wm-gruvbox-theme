@@ -1,8 +1,11 @@
-Here is almost every file for my personal i3-wm gruvbox theme implementation using the
-colors of the great gruvbox https://github.com/morhetz/gruvbox color scheme. 
+Here is almost every file for my personal i3-wm gruvbox theme adaptation using the
+colors of the great gruvbox https://github.com/morhetz/gruvbox color scheme.
+There is also a poorly written, general how to guide below.
 
 ![alt text](https://github.com/a-schaefers/i3-wm-gruvbox-theme/raw/master/screenshots/gruv-clean-grootify.png)
 ![alt text](https://github.com/a-schaefers/i3-wm-gruvbox-theme/raw/master/screenshots/gruv-sadkitty-clean.png)
+![alt text](https://github.com/a-schaefers/i3-wm-gruvbox-theme/blob/master/screenshots/gruv-prepper-clean.png)
+![alt text](https://github.com/a-schaefers/i3-wm-gruvbox-theme/blob/master/screenshots/gruv-dirty.png)
 
 I did it like this:
 
@@ -43,8 +46,4 @@ It is the most ugly code I've seen since 1995. I do not guarantee it will look r
 Happy grooving.
 
 
-![alt text](https://github.com/a-schaefers/i3-wm-gruvbox-theme/blob/master/screenshots/gruv-prepper-clean.png)
-
-
-![alt text](https://github.com/a-schaefers/i3-wm-gruvbox-theme/blob/master/screenshots/gruv-dirty.png)
 
