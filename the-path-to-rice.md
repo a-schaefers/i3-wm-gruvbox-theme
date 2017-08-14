@@ -1,6 +1,7 @@
 I wrote this previously in reply to somebody on reddit who wanted to enjoy linux as
 desktop operating system. At the time he was comparing ubuntu and derivatives
 head to head with mac OSX. I kinda like what I wrote so I'm keeping it here.
+---------------------------------------------------------------------------
 
 The only way to love a unix system is to despise everything else. Love or hate Richard Stallman and his religious cult (find him on youtube), this is what he is good for. Windows and OSX restrict your freedom and control you with "digital handcuffs". They are also hard to debug and hard to hack. Linux sucks, but windows and osx sucks more. A linux system will come to you as it is, often buggy, but at least it will tell you the error messages and not hide them from you, and so it is also fixable, ready to be hacked into and made in to something that you can call your own. "If you can't hack it, then you don't own it."
 
@@ -20,5 +21,5 @@ Desktop Environments https://wiki.archlinux.org/index.php/desktop_environment
 
 Most of the ricers here [reddit / unixporn] pick a window manager that is lightweight and easily customizeable, such as i3 or openbox, and there are dozens of others. Batteries are not included with these, so you will need to install a lot of programs and edit a lot of config files to get everything working together nicely. A customizeable terminal like rxvt-unicode, a program launcher like Dmenu or Rofi, and a bar like Polybar... At this point you probably want transparency and smooth-scrolling without vertical screen-tearing issues, so take a look at: Compositors. https://wiki.archlinux.org/index.php/Xorg#Composite Most here use a program called Compton for this. Most of these programs are designed to only do one thing. Most of the time the goal is to configure it and then integrate it to auto start.
 
-Regardless of which Linux distro you end up settling with-- and many of us never do fully settle-- the Arch wiki is some of the best documentation out there when it comes to tweaking your desktop-- often straight and to the point-- and so it will show you how to do whatever you want to do, and along the way you will attain a lot of knowledge. Only be warned, this is not the easy path, and there be dragons.   
+Regardless of which Linux distro you end up settling with-- the Arch wiki is some of the best documentation out there when it comes to tweaking your desktop-- often straight and to the point-- and so it will show you how to do whatever you want to do, and along the way you will attain a lot of knowledge. Only be warned, this is not the easy path, and there be dragons.   
 
