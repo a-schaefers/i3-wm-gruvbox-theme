@@ -110,6 +110,9 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20
 
 #THEME
 
+# For conky
+exec --no-startup-id /home/adam/.config/i3/screens.sh &
+
 #gruvbox colorscheme
 set $bg #282828
 set $red #cc241d
@@ -122,7 +125,6 @@ set $aqua #689d68
 set $gray #a89984
 set $darkgray #1d2021
 
-#font pango:Fantasque Sans Mono 10
 font pango:Hack 8
 
 #bar section
@@ -154,7 +156,7 @@ bar {
 # blue gruvbox
 # class                 border|backgr|text|indicator|child_border
 client.focused          $blue $blue $darkgray $purple $darkgray
-client.focused_inactive $bg $darkgray $yellow $purple $darkgray
-client.unfocused        $bg $darkgray $yellow $purple $darkgray
+client.focused_inactive $darkgray $darkgray $yellow $purple $darkgray
+client.unfocused        $darkgray $darkgray $yellow $purple $darkgray
 client.urgent           $red $red $white $red $red
 
