@@ -42,10 +42,6 @@ bindsym $mod+Control+j move down
 bindsym $mod+Control+k move up
 bindsym $mod+Control+l move right
 
-# executed on startup and i3 restarts
-# exec_always --no-startup-id ~/.config/i3/screens.sh
-bindsym $mod+s exec --no-startup-id ~/.config/i3/screens.sh
-
 # new window split direction toggle
 bindsym $mod+t split toggle
 
@@ -101,8 +97,8 @@ bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% #increase sound vo
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5% #decrease sound volume
 bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # mute sound
 
-# install acpilight for this drop in xbacklight replacement
-# Sreen brightness controls
+# This will work with xbacklight or acpilight (I use acpilight as an xbacklight dropin-replacement)
+# Screen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20
 
@@ -110,8 +106,15 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20
 
 #THEME
 
-# For conky
-exec --no-startup-id /home/adam/.config/i3/screens.sh &
+# I run this script on startup to load conky
+# as well as set my personal external monitor
+# and I execute the script every time I dock /
+# or detach my laptop.
+# the script also restarts conky and restarts compton.
+# (helpful for debugging stuff.)
+exec --no-startup-id ~/.config/i3/screens.sh &
+bindsym $mod+s exec --no-startup-id ~/.config/i3/screens.sh
+
 
 #gruvbox colorscheme
 set $bg #282828
@@ -130,7 +133,7 @@ font pango:Hack 8
 #bar section
 bar {
     position bottom
-    status_command i3blocks -c /home/adam/.config/i3/i3blocks.conf
+    status_command i3blocks -c ~/.config/i3/i3blocks.conf
     colors {
             background $bg
             statusline $yellow
@@ -148,8 +151,8 @@ bar {
 # green gruvbox
 # class                 border|backgr|text|indicator|child_border
 #client.focused          $green $green $darkgray $purple $darkgray
-#client.focused_inactive $bg $darkgray $yellow $purple $darkgray
-#client.unfocused        $bg $darkgray $yellow $purple $darkgray
+#client.focused_inactive $darkgray $darkgray $yellow $purple $darkgray
+#client.unfocused        $darkgray $darkgray $yellow $purple $darkgray
 #client.urgent           $red $red $white $red $red
 
 
