@@ -1,6 +1,7 @@
 Here is almost every file for my personal i3-wm gruvbox theme implementation using the
 colors of the great gruvbox https://github.com/morhetz/gruvbox color scheme. 
 
+![alt text](https://github.com/a-schaefers/i3-wm-gruvbox-theme/raw/master/screenshots/gruv-clean-grootify.png)
 ![alt text](https://github.com/a-schaefers/i3-wm-gruvbox-theme/raw/master/screenshots/gruv-sadkitty-clean.png)
 
 I did it like this:
