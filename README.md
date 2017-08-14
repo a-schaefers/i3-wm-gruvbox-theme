@@ -3,8 +3,7 @@ colors of the great gruvbox https://github.com/morhetz/gruvbox color scheme.
 There is also a poorly written, general how to guide below.
 
 ![alt text](https://github.com/a-schaefers/i3-wm-gruvbox-theme/raw/master/screenshots/gruv-clean-grootify.png)
-![alt text](https://github.com/a-schaefers/i3-wm-gruvbox-theme/blob/master/screenshots/gruv-dirty-opate.png)
-![alt text](https://github.com/a-schaefers/i3-wm-gruvbox-theme/raw/master/screenshots/gruv-sadkitty-clean.png)
+![alt text](https://github.com/a-schaefers/i3-wm-gruvbox-theme/blob/master/screenshots/gruv-dirty-opate.png) ![alt text](https://github.com/a-schaefers/i3-wm-gruvbox-theme/raw/master/screenshots/gruv-sadkitty-clean.png)
 ![alt text](https://github.com/a-schaefers/i3-wm-gruvbox-theme/blob/master/screenshots/gruv-prepper-clean.png)
 
 I did it like this:
@@ -22,8 +21,8 @@ for almost everything else.
 
 4. Install i3blocks. https://github.com/vivien/i3blocks These blocks will not all work the same out of the
    box for everyone. At the least you'll probably need to set your network
-   interface for ethernet and wifi will probably be different than mine. (my
-   ethernet is 'eno1' and wifi is 'wlp2s0'.) If you don't know what yours is, try typing 'ip link' or 'ifconfig' in the terminal and check the output. Also the path to the i3blocks scripts at the top of the i3blocks.conf file is set using my name /home/adam so that needs to be changed. If you have trouble with a particular block not displaying, try executing the script directly to see if you may be missing a package. (E.g. ./battery) Now if a 'command not found' error appears, then you need to find out what command was not found, and what package you may need to get that command. Google is your friend here.
+   interface because my ethernet and wifi interface will probably be different than yours. (my
+   ethernet is 'eno1' and wifi is 'wlp2s0'.) If you don't know what yours is, try typing 'ip link' or 'ifconfig' in the terminal and check the output. Also the path to the i3blocks scripts at the top of the i3blocks.conf file is set using my name /home/adam so that needs to be changed. If you have trouble with a particular block not displaying, try executing the script directly to see if you may be missing a package. (E.g. ./battery) Now if a 'command not found' error appears, then you need to find out what command was not found, and what package you may need to get that command. Google is your friend here. Lastly, a few of the i3blocks scripts use their own colors by default, overriding your personal preference. I disabled this and included my version of the scripts. The only thing was changed was that the scripts no longer override color settings.
 
 5. I am using prezto's https://github.com/sorin-ionescu/prezto zsh config, it's more lightweight than others that are
    out there and by default looks great with gruvbox.
