@@ -13,7 +13,7 @@ xrandr --output LVDS-1 --primary
 xrandr --output VGA-1 --auto --left-of LVDS-1
 nitrogen --restore &
 dunst &
-compton --config /home/adam/.config/i3/compton.conf &
+compton --config ~/.config/i3/compton.conf &
 
 exec i3
 
