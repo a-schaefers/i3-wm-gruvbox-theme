@@ -9,16 +9,11 @@ fi
 
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 urxvtd -q -o -f &
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-compton --config /home/adam/.config/i3/compton.conf &
-dunst &
 xrandr --output LVDS-1 --primary
 xrandr --output VGA-1 --auto --left-of LVDS-1
 nitrogen --restore &
-conky -c /home/adam/.config/i3/conkyrc &
-sleep 1
-conky -c /home/adam/.config/i3/conkyrc2 &
-
+dunst &
+compton --config /home/adam/.config/i3/compton.conf &
 
 exec i3
 

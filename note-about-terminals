@@ -1,4 +1,4 @@
-if not using a terminal that supports true colors, e.g. gnome-terminal, then
+if not using a terminal that supports true colors, then
 use the included 256 color pallette correction script that comes with gruvbox
 vim theme, it must be placed in .bashrc or .zshrc:
 See link, Section 2: A.
