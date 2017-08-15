@@ -48,5 +48,8 @@ the oomox gtk theme along with gtk font. I use 'Hack' font for GTK, i3, and conk
 For my terminal I use Fantasque Sans Mono because I feel like
 it's pretty groovy.
 
+Note: I provide links to a lot of the projects here, but it is generally best
+to install them using a package manager from your distro.
+
 And that is all.
 
