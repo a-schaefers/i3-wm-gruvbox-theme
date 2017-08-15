@@ -1,8 +1,12 @@
-#minimal i3 configurations
+# minimal i3 configurations
+# GRUVBOX theme colors are set at the end
+#
+# I use an Advantage 2 Kinesis ergonomic keyboard
+# (incase you are wondering why my key 
+# bindings are a little strange.)
 
 # Set mod keys (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod1
-
 
 # terminal
 bindsym $mod+Return exec --no-startup-id urxvtc 
@@ -29,7 +33,7 @@ bindsym Print exec --no-startup-id scrot
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen
 
-# vim key navigations, uncomment the other sections for arrow keys
+# vim key navigations
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -49,14 +53,11 @@ bindsym $mod+t split toggle
 bindsym grave scratchpad show
 bindsym $mod+grave move scratchpad
 
+# floating windows
 floating_modifier $mod
 bindsym $mod+space floating toggle
 
-# workspaces
-# to display names or symbols instead of plain workspace numbers you can use
-# something like: set $ws1 1:mail
-#                 set $ws2 2:
-
+# workspace names / font-awesome
 set $ws1 "01 "
 set $ws2 "02 "
 set $ws3 "03 "
@@ -97,30 +98,31 @@ bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% #increase sound vo
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5% #decrease sound volume
 bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # mute sound
 
-# This will work with xbacklight or acpilight (I use acpilight as an xbacklight dropin-replacement)
+# This should work with xbacklight or acpilight 
+# (I use acpilight as an xbacklight dropin-replacement)
 # Screen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20
 
 
-
-#THEME
+#######
+#THEME#
+#######
 
 # I run this script on startup to load conky
-# as well as set my personal external monitor
+# as well as set my external monitor
 # and I execute the script every time I dock /
 # or detach my laptop.
 # the script also restarts conky and restarts compton.
 # (helpful for debugging stuff.)
+# If you use this, you'll also need to modify the screens.sh file
 exec --no-startup-id ~/.config/i3/screens.sh &
 bindsym $mod+s exec --no-startup-id ~/.config/i3/screens.sh
 
-
-#gruvbox colorscheme
+# set primary gruvbox colorscheme colors
 set $bg #282828
 set $red #cc241d
 set $green #98971a
-set $lightgreen #b8bb26
 set $yellow #d79921
 set $blue #458588
 set $purple #b16286
@@ -128,6 +130,7 @@ set $aqua #689d68
 set $gray #a89984
 set $darkgray #1d2021
 
+# font used by i3 for titles and bars
 font pango:Hack 8
 
 #bar section
@@ -135,18 +138,21 @@ bar {
     position bottom
     status_command i3blocks -c ~/.config/i3/i3blocks.conf
     colors {
-            background $bg
-            statusline $yellow
-            
-            #                    border  backgr. text
-            focused_workspace    $aqua $aqua $darkgray
-            inactive_workspace   $darkgray $darkgray $yellow
-            active_workspace     $darkgray $darkgray $yellow
-            urgent_workspace     $red $red $bg
-        }
+        # bar background color
+        background $bg
+        # text color used for blocks that do not have a color specified.
+        statusline $yellow
+        # workspaces section            
+        #                    border  backgr. text
+        focused_workspace    $aqua $aqua $darkgray
+        inactive_workspace   $darkgray $darkgray $yellow
+        active_workspace     $darkgray $darkgray $yellow
+        urgent_workspace     $red $red $bg
+    }
 }
 
-# window section
+
+# Window title bars & borders section
 
 # green gruvbox
 # class                 border|backgr|text|indicator|child_border
@@ -154,7 +160,6 @@ bar {
 #client.focused_inactive $darkgray $darkgray $yellow $purple $darkgray
 #client.unfocused        $darkgray $darkgray $yellow $purple $darkgray
 #client.urgent           $red $red $white $red $red
-
 
 # blue gruvbox
 # class                 border|backgr|text|indicator|child_border

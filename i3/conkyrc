@@ -36,15 +36,22 @@ use_spacer yes
 
 
 minimum_size 0 0
+
+# This is the default "Gotham" conky clock that comes with the
+# conky-manager package.
+# It has been adapted to use Gruvbox colorscheme and
+# use a slightly smaller font-size.
+#
+# (From the next line down, #WhiteSpaceMatters) ...
 TEXT
 ${voffset 10}${color EBDBB2}${font GE Inspira:pixelsize=120}${time %I:%M}${font}${voffset -84}${offset 10}${color 98971A}${font GE Inspira:pixelsize=40}${time %d} ${voffset -15}${color D79921}${font GE Inspira:pixelsize=22}${time  %B} ${time %Y}${color CC241D}${font}${voffset 24}${font GE Inspira:pixelsize=45}${offset -148}${time %A}${font}
 
 
 
-#conkysucks
+# conkysucks
 #white ${color EDBBB2}
-# green ${color 98971A}
-# yllw ${color D79921}
-# red ${color CC241D}
-# purple ${color B16286}
+#green ${color 98971A}
+#yllw ${color D79921}
+#red ${color CC241D}
+#purple ${color B16286}
 

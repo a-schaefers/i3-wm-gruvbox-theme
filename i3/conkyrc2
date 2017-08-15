@@ -37,6 +37,27 @@ use_spacer yes
 
 
 minimum_size 0 0
+
+# For those who may be hacking into this, positioning is not very fun in conky.
+# or maybe I just don't get it!?
+#
+# The way this works here is every line is a line painted on the screen!
+# For example, to remove the 4 lines about disk space entirely, you would need to remove
+# only half of each of the 4 lines, because the lines are being shared
+# with the processes/CPU information!
+#
+# And ${goto <number>} is a hard 'anchor' of where to display the text
+# that follows.
+#
+# And ${offset <number>} is a relative offset from whatever comes before it.
+# And the entire thing is relative to the 'alignment top_left' setting above!
+#
+# This seems like an insane method for position things on a screen.
+# I hope there is a better way of doing this in the future or 
+# I may be unaware of it! If you use this and make any improvemenmts, 
+# please share it with me! <sch@efers.org>
+#
+# (Remember, from the next line down, #WhiteSpaceMatters) ...
 TEXT
 
 #conky sucks
@@ -52,11 +73,11 @@ ${goto 12}${color EDBBB2}05. ${color B16286}${top name 5}${goto 120}${top cpu 5}
 
 
 
-# green ${color 98971A}
-# yllw ${color D79921}
-# red ${color CC241D}
-# purple ${color B16286}
-# blue ${color 458588} 
-#conky sucks a lot
+#green ${color 98971A}
+#yllw ${color D79921}
+#red ${color CC241D}
+#purple ${color B16286}
+#blue ${color 458588} 
+# conky sucks a lot
 
 
