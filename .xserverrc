@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# xserverrc
+# https://wiki.archlinux.org/index.php/Xinit#Configuration
+
+# The xserverrc file is a shell script responsible for starting up the X server. Both startx and xinit execute ~/.xserverrc if it exists, startx will use  /etc/X11/xinit/xserverrc otherwise.
+
+# In order to maintain an authenticated session with logind and to prevent bypassing the screen locker by switching terminals, Xorg has to be started on the same virtual terminal where the login occurred.[1] Therefore it is recommended to specify vt$XDG_VTNR in the ~/.xserverrc file:
+
+exec /usr/bin/Xorg -nolisten tcp "$@" vt$XDG_VTNR
+
