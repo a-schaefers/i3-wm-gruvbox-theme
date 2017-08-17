@@ -1,22 +1,24 @@
 "Keep it simple, STupid..
 "hjkl hjkl hjkl hjkl hjkl
 
+
 """"""""""""""""""""""""""""""""""""
 " key mappings
+""""""""""""""""""""""""""""""""""""
 let mapleader = ";"
 map <leader>w :w!<cr>
 map <leader>pp :setlocal paste!<cr>
-map <leader>sp :setlocal spell!<cr> 
+map <leader>sp :setlocal spell!<cr>
 
 
 """"""""""""""""""""""""""""""""""""
 "https://github.com/junegunn/vim-plug
 "(Plugin settings at end ^G)
+""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'vivien/vim-linux-coding-style'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
 Plug 'Yggdroot/indentLine'
@@ -26,21 +28,42 @@ call plug#end()
 
 
 """"""""""""""""""""""""""""""""""""
-"formatting
+"Formatting
+""""""""""""""""""""""""""""""""""""
+" For all souls.
 filetype plugin indent on
 syntax enable
 set textwidth=78
-set smarttab
-set tabstop     =4
-set softtabstop =4
-set shiftwidth  =4
-set expandtab
-set autoindent
 set backspace=indent,eol,start
-set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
-set formatoptions+=j
 
+" For the Orthodox among us, may the peace with you.
+" https://www.kernel.org/doc/html/v4.10/process/coding-style.html
+set tabstop=8
+set shiftwidth=8
+set softtabstop=8
+set noexpandtab
+
+" For heretics.
+" http://www.vex.net/~x/python_and_vim.html
+"set tabstop     =4
+"set shiftwidth  =4
+"set softtabstop =4
+"set expandtab
+
+
+""""""""""""""""""""""""""""""""""""
+" Highlight unwanted whitespace
+""""""""""""""""""""""""""""""""""""
+highlight default link LinuxError ErrorMsg
+syn match LinuxError / \+\ze\t/
+syn match LinuxError /\%>80v[^()\{\}\[\]<>]\+/
+autocmd InsertEnter * match LinuxError /\s\+\%#\@<!$/
+autocmd InsertLeave * match LinuxError /\s\+$/
+
+
+""""""""""""""""""""""""""""""""""""
 "appearance
+""""""""""""""""""""""""""""""""""""
 set t_Co=256
 let g:gruvbox_italic=1
 colorscheme gruvbox
@@ -51,7 +74,10 @@ set laststatus=2
 set showcmd
 set showtabline=1
 
+
+""""""""""""""""""""""""""""""""""""
 "misc
+""""""""""""""""""""""""""""""""""""
 set encoding=utf-8
 set undofile
 set backup
@@ -78,7 +104,10 @@ set lazyredraw
 set ttimeout
 set ttimeoutlen=100
 
+
+""""""""""""""""""""""""""""""""""""
 "searching
+""""""""""""""""""""""""""""""""""""
 set ignorecase
 set smartcase
 set incsearch
@@ -90,7 +119,8 @@ endif
 
 
 """"""""""""""""""""""""""""""""""""
-"extra
+"extra / other
+""""""""""""""""""""""""""""""""""""
 " See the difference between the current buffer and the
 " file it was loaded from, thus the changes you made.
 " Only define it when not defined already.
@@ -102,6 +132,7 @@ endif
 
 """"""""""""""""""""""""""""""""""""
 "Plugin settings
+""""""""""""""""""""""""""""""""""""
 " nerdtree
 map <C-n> :NERDTreeToggle<CR>
 
@@ -122,20 +153,20 @@ let g:indentLine_char = '│'
 " lightline
 set noshowmode
 let g:lightline = {
-    \ 'colorscheme': 'gruvbox',
-    \ 'component': {
- 	\   'lineinfo': ' %3l:%-2v',
- 	\ },
-    \ 'active': {
-    \   'left': [ [ 'mode', 'paste' ],
-    \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
-    \ },
-    \ 'component_function': {
-    \   'gitbranch': 'fugitive#head',
- 	\   'readonly': 'LightlineReadonly',
- 	\   'fugitive': 'LightlineFugitive'
-    \ },
-    \ }
+	\ 'colorscheme': 'gruvbox',
+	\ 'component': {
+	\   'lineinfo': ' %3l:%-2v',
+	\ },
+	\ 'active': {
+	\   'left': [ [ 'mode', 'paste' ],
+	\             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+	\ },
+	\ 'component_function': {
+	\   'gitbranch': 'fugitive#head',
+	\   'readonly': 'LightlineReadonly',
+	\   'fugitive': 'LightlineFugitive'
+	\ },
+\ }
 function! LightlineReadonly()
 	return &readonly ? '' : ''
 endfunction
@@ -149,6 +180,6 @@ endfunction
 
 " Load matchit.vim, but only if the user hasn't installed a newer version.
 if !exists('g:loaded_matchit') && findfile('plugin/matchit.vim', &rtp) ==# ''
-  runtime! macros/matchit.vim
+	runtime! macros/matchit.vim
 endif
 
