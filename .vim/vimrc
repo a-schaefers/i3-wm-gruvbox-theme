@@ -3,7 +3,7 @@
 
 
 """"""""""""""""""""""""""""""""""""
-" key mappings
+" Key mappings
 """"""""""""""""""""""""""""""""""""
 let mapleader = ";"
 map <leader>w :w!<cr>
@@ -12,8 +12,8 @@ map <leader>sp :setlocal spell!<cr>
 
 
 """"""""""""""""""""""""""""""""""""
-"https://github.com/junegunn/vim-plug
-"(Plugin settings at end ^G)
+" https://github.com/junegunn/vim-plug
+" (Plugin settings at end ^G)
 """"""""""""""""""""""""""""""""""""
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-fugitive'
@@ -21,14 +21,13 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
-Plug 'Yggdroot/indentLine'
 Plug 'morhetz/gruvbox'
 Plug 'itchyny/lightline.vim'
 call plug#end()
 
 
 """"""""""""""""""""""""""""""""""""
-"Formatting
+" Formatting
 """"""""""""""""""""""""""""""""""""
 " For all souls.
 filetype plugin indent on
@@ -62,7 +61,7 @@ autocmd InsertLeave * match LinuxError /\s\+$/
 
 
 """"""""""""""""""""""""""""""""""""
-"appearance
+" Appearance
 """"""""""""""""""""""""""""""""""""
 set t_Co=256
 let g:gruvbox_italic=1
@@ -76,7 +75,7 @@ set showtabline=1
 
 
 """"""""""""""""""""""""""""""""""""
-"misc
+" Misc
 """"""""""""""""""""""""""""""""""""
 set encoding=utf-8
 set undofile
@@ -106,7 +105,7 @@ set ttimeoutlen=100
 
 
 """"""""""""""""""""""""""""""""""""
-"searching
+" Searching
 """"""""""""""""""""""""""""""""""""
 set ignorecase
 set smartcase
@@ -119,7 +118,7 @@ endif
 
 
 """"""""""""""""""""""""""""""""""""
-"extra / other
+" Extra / other
 """"""""""""""""""""""""""""""""""""
 " See the difference between the current buffer and the
 " file it was loaded from, thus the changes you made.
@@ -131,7 +130,7 @@ endif
 
 
 """"""""""""""""""""""""""""""""""""
-"Plugin settings
+" Plugin settings
 """"""""""""""""""""""""""""""""""""
 " nerdtree
 map <C-n> :NERDTreeToggle<CR>
@@ -144,11 +143,6 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-
-" Indent Line
-let g:indentLine_enabled = 1
-let g:indentLine_setColors = 0
-let g:indentLine_char = '│'
 
 " lightline
 set noshowmode
