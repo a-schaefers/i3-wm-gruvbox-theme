@@ -1,5 +1,7 @@
 "Keep it simple, STupid..
 "hjkl hjkl hjkl hjkl hjkl
+edit : Sat May  5 00:00:12 PDT 2018 : THIS VIMRC SUCKS DONT USE IT THANKS
+https://github.com/a-schaefers/Dotfiles/blob/master/.vimrc < oh, look, a better one
 
 
 """"""""""""""""""""""""""""""""""""
@@ -147,33 +149,32 @@ let g:syntastic_check_on_wq = 0
 " lightline
 set noshowmode
 let g:lightline = {
-	\ 'colorscheme': 'gruvbox',
-	\ 'component': {
-	\   'lineinfo': ' %3l:%-2v',
-	\ },
-	\ 'active': {
-	\   'left': [ [ 'mode', 'paste' ],
-	\             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
-	\ },
-	\ 'component_function': {
-	\   'gitbranch': 'fugitive#head',
-	\   'readonly': 'LightlineReadonly',
-	\   'fugitive': 'LightlineFugitive'
-	\ },
+  \ 'colorscheme': 'gruvbox',
+  \ 'component': {
+  \   'lineinfo': ' %3l:%-2v',
+  \ },
+  \ 'active': {
+  \   'left': [ [ 'mode', 'paste' ],
+  \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+  \ },
+  \ 'component_function': {
+  \   'gitbranch': 'fugitive#head',
+  \   'readonly': 'LightlineReadonly',
+  \   'fugitive': 'LightlineFugitive'
+  \ },
 \ }
 function! LightlineReadonly()
-	return &readonly ? '' : ''
+  return &readonly ? '' : ''
 endfunction
 function! LightlineFugitive()
-	if exists('*fugitive#head')
-		let branch = fugitive#head()
-		return branch !=# '' ? ''.branch : ''
-	endif
-	return ''
+  if exists('*fugitive#head')
+    let branch = fugitive#head()
+    return branch !=# '' ? ''.branch : ''
+  endif
+  return ''
 endfunction
 
 " Load matchit.vim, but only if the user hasn't installed a newer version.
 if !exists('g:loaded_matchit') && findfile('plugin/matchit.vim', &rtp) ==# ''
-	runtime! macros/matchit.vim
+  runtime! macros/matchit.vim
 endif
-
