@@ -1,4 +1,4 @@
-## important notice
+## important notice Thu Jul  5 13:20:44 PDT 2018
 I've since moved on from this theme to a very basic standards based setup. https://github.com/a-schaefers/Dotfiles . And truthfully this is all I can recommend anymore! I use Emacs. Vi. Screen. and Bash. That's about it... See my current Dotfiles where I aim for consistency and correctness. **I do not use, support or maintain this theme anymore.** What you see is what you get. I made this theme when I was a new(er) linux user and it is probably ridden with bugs and hacky things. I've lost all interest in serious desktop theming or "ricing." What you see is what you get. Use at your own risk. This theme was more popular than I ever imagined it should be, thanks to all who like it and use it, and for the kind words.
 
 # Here is almost every file for my personal i3-wm gruvbox theme adaptation using the colors of the great gruvbox https://github.com/morhetz/gruvbox color scheme. There is also a poorly written, general how to guide below.
