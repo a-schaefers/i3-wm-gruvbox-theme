@@ -1,7 +1,7 @@
 ## important notice Thu Jul  5 13:20:44 PDT 2018
-I've moved on from this theme to a very basic standards-based setup. https://github.com/a-schaefers/Dotfiles . **I do not use, support or maintain this theme.** What you see is what you get. If you like it / parts of it and it works for you-- great. If you can't get it figured out, I'm sorry, but I will not be able to help you. Good luck!!!
-
-# Here is almost every file for my personal i3-wm gruvbox theme adaptation using the colors of the great gruvbox https://github.com/morhetz/gruvbox color scheme. There is also a poorly written, general how to guide below.
+I've moved on from this theme. I'm just using Emacs and Exwm now days.
+**I do not use this desktop theme or i3 and cannot provide support for newer users who want to try it.**
+If it works for you-- great. If you can't get it figured out, I'm sorry, but I will not be able to help you. Good luck!!!
 
 ![alt text](https://github.com/a-schaefers/i3-wm-gruvbox-theme/raw/master/screenshots/gruv-clean-grootify.png)
 ![alt text](https://github.com/a-schaefers/i3-wm-gruvbox-theme/blob/master/screenshots/gruv-dirty-opate.png) ![alt text](https://github.com/a-schaefers/i3-wm-gruvbox-theme/raw/master/screenshots/gruv-sadkitty-clean.png)
@@ -16,7 +16,7 @@ lightline vim settings. I also have font-awesome powerline-fonts installed along
 and Fantasque Sans Mono fonts. I use Fantasque Sans Mono for the terminal and Hack
 for almost everything else.
 
-2. Apply gruvbox color scheme to .Xresources file. 
+2. Apply gruvbox color scheme to .Xresources file.
 
 3. Apply i3 config colors. The colors and are located at the end of my i3/config.
 
@@ -31,7 +31,7 @@ for almost everything else.
 6. Rofi https://github.com/DaveDavenport/rofi comes with gruvbox theme included all that is necessary is to turn it
    on.
 
-7. Conky. https://github.com/brndnmtthws/conky 
+7. Conky. https://github.com/brndnmtthws/conky
 It is the most ugly code I've seen since 1995. I do not guarantee it will look right for you,
    but it displays fine on my 1366x768 laptop screen. conkyrc is the
    clock/date. conkyrc2 is the process list / disk space and will need some tweaking
@@ -45,7 +45,7 @@ I included pictures of my settings and there is also a config file in this
 repo.
 
 10. Apply the gtk theme and double check your fonts. I use lxappearance to set
-the oomox gtk theme along with gtk font. I use 'Hack' font for GTK, i3, and conky. 
+the oomox gtk theme along with gtk font. I use 'Hack' font for GTK, i3, and conky.
 For my terminal I use Fantasque Sans Mono because I feel like
 it's pretty groovy.
 
@@ -53,4 +53,3 @@ Note: I provide links to a lot of the projects here, but it is generally best
 to install them using a package manager from your distro.
 
 And that is all.
-
