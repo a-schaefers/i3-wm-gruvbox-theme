@@ -1,6 +1,5 @@
 ## important notice Thu Jul  5 13:20:44 PDT 2018
-I've moved on from this theme. I'm just using Emacs and Exwm now days.
-**I do not use this desktop theme or i3 and cannot provide support for newer users who want to try it.**
+I do not use this desktop theme or i3 anymore and cannot provide support for newer users who want to try it.
 If it works for you-- great. If you can't get it figured out, I'm sorry, but I will not be able to help you. Good luck!!!
 
 ![alt text](https://github.com/a-schaefers/i3-wm-gruvbox-theme/raw/master/screenshots/gruv-clean-grootify.png)
